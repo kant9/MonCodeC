@@ -1,0 +1,42 @@
+#include <stdio.h>
+int main(){
+	float mat,fr,ang,pc,m;
+	int cm=5,cf=3,ca=2,cp=6;
+	int const sc=16;
+	char c[]="";
+	
+            printf("Donner votre nom s'il vous plait : ");
+	scanf("%s",c);
+	printf("%s Saisi ta note en math : ",c);
+	scanf("%f",&mat);
+	printf("%s Saisi ta note en français : ",c);
+	scanf("%f",&fr);
+	printf("%s Saisi ta note en anglais : ",c);
+	scanf("%f",&ang);
+	printf("%s Saisi ta note en pc : ",c);
+	scanf("%f",&pc);
+	
+	m=((mat*cm)+(fr*cf)+(ang*ca)+(pc*cp))/sc;
+	printf("\n %s ta moyenne est %.2f\n",c,m);
+	
+    if(m > 14)
+	{
+		printf("c'est excellent\n");
+    }	
+	if(m >12 && m <= 14)
+	{
+		printf("c'est tres bien\n");
+	}
+	if(m < 10){
+		printf("mediocre\n");
+		
+    }
+    
+    if(m == 10){
+		printf("c'est passable\n");
+    }
+    
+	//system("pause>0");  //Pour bloquer la console et ne pas afficher le message : Appuyer sur une touche... 
+return 0;
+
+}
